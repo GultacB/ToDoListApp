@@ -1,0 +1,14 @@
+﻿@model ToDo
+
+<div class="text-center" style="margin-top:50px;">
+    <h2><i style="color:coral">Edit Wish</i></h2>
+</div>
+
+<form asp-controller="Home" asp-action="Edit" method="post">
+  <div class="input-group mb-3" style="width:850px; margin-left:200px; margin-top:70px;">
+     <input type="hidden" asp-for="Id">
+     <input type="text" class="form-control" aria-label="Edit wish" aria-describedby="button-addon2" placeholder="Edit wish" asp-for="MyWish">
+     <button class="btn btn-primary" type="submit" id="button-addon2">Edit</button>
+  </div>
+</form>
+
